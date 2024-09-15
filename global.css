@@ -1,0 +1,179 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  width: 100%;
+  border-radius: 0.2rem;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid black;
+}
+
+main {
+  flex: 1;
+}
+
+.form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0.5rem;
+  max-width: 1024px;
+}
+
+.header {
+  background-color: #f7f7f9;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #333;
+}
+
+.navbar ul {
+  list-style: none;
+  text-align: center;
+}
+
+.navbar li {
+  display: inline;
+  margin: 0 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #333;
+  transition: color 0.2s ease-in-out;
+}
+
+.navbar a:hover {
+  color: #0071e3;
+}
+
+.hero {
+  padding: 120px 0;
+  text-align: center;
+  color: #fff;
+  background-color: #000;
+}
+
+.hero h1 {
+  font-size: 3em;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.25em;
+  margin: 20px 0;
+}
+
+.btn-primary {
+  background-color: #0071e3;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 0.75rem;
+  font-size: 1em;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #005bb5;
+}
+
+.product-grid {
+  display: grid;
+  gap: 2rem;
+  margin-top: 2rem;
+  justify-content: space-between;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.product-item {
+  background: #fff;
+  text-align: center;
+  padding: 1.5rem 3rem;
+  border-radius: 1.5rem;
+  border: 1px solid #e6e6e6;
+  transition: background 0.3s ease-in-out;
+}
+
+.product-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+.product-item h3 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.product-item p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #888;
+}
+
+.product-item:hover {
+  background: #f7f7f9;
+}
+
+.btn-secondary {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 1.5rem;
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: inline-block;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-secondary:hover {
+  background-color: #444;
+}
+
+.featured-products {
+  margin-top: 2rem;
+}
+
+.footer {
+  background-color: #f7f7f9;
+  text-align: center;
+  margin-top: 2rem;
+  width: 100%;
+  padding: 0.5rem 0;
+  font-size: 0.9em;
+  color: #666;
+  border-top: 1px solid #e6e6e6;
+}
