@@ -32,7 +32,7 @@
     <main>
       <div class="container">
         <h1 style="text-align: center; margin-top: 2rem">Contact Us</h1>
-        <form class="form">
+        <form id="formElement">
           <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label"
               >Name</label
@@ -40,30 +40,44 @@
             <input
               type="text"
               class="form-control"
-              id="exampleFormControlInput1"
               placeholder="John Doe"
+              name="name"
+              data-title="Name"
             />
+            <span class="error text-danger"></span>
           </div>
           <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label"
-              >Email address</label
-            >
+            <label for="email" class="form-label">Email address</label>
             <input
               type="email"
               class="form-control"
-              id="exampleFormControlInput1"
+              name="email"
               placeholder="name@example.com"
+              data-title="Email"
             />
+            <span class="error text-danger"></span>
           </div>
+
           <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label"
-              >Example textarea</label
-            >
-            <textarea
+            <label for="password" class="form-label">Password</label>
+            <input
               class="form-control"
-              id="exampleFormControlTextarea1"
-              rows="3"
-            ></textarea>
+              type="password"
+              name="password"
+              data-title="Password"
+            />
+            <span class="error text-danger"></span>
+          </div>
+
+          <div class="mb-3">
+            <label for="password" class="form-label">Confirm password</label>
+            <input
+              class="form-control"
+              type="password"
+              name="confirm-pass"
+              data-title="Confirm password"
+            />
+            <span class="error text-danger"></span>
           </div>
           <button class="btn btn-primary" type="submit">Submit</button>
         </form>
@@ -74,5 +88,6 @@
         <p>by Nurzat Samatov SE-2319</p>
       </div>
     </footer>
+    <script src="form-script.js"></script>
   </body>
 </html>
