@@ -13,7 +13,7 @@ body {
 }
 
 body {
-  font-family: "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
   font-size: 16px;
   color: #333;
   background-color: #fff;
@@ -124,4 +124,57 @@ main {
   font-size: 0.9em;
   color: #666;
   border-top: 1px solid #e6e6e6;
+}
+
+h1 {
+  text-align: center;
+  color: #4a90e2;
+}
+
+.item {
+  margin: 10px 0;
+  padding: 10px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.item:hover {
+  background: #e9ecef;
+}
+
+.additional-info {
+  display: none; /* Initially hide additional info */
+  margin-top: 5px;
+  padding: 5px;
+  background: #f1f1f1;
+  border-left: 3px solid #4a90e2;
+}
+
+.button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  border-radius: 4rem;
+}
+
+.button:hover {
+  background-color: #357abd;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 6px 14px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 2rem;
 }
